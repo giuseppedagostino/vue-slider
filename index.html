@@ -29,11 +29,7 @@
       </div>
 
       <nav>
-        <i class="fas fa-circle active"></i>
-        <i class="fas fa-circle"></i>
-        <i class="fas fa-circle"></i>
-        <i class="fas fa-circle"></i>
-        <i class="fas fa-circle"></i>
+        <i v-for="(item, index) in images" :class="(index == imageIndex) ? 'active' : null" class="fas fa-circle"></i>
       </nav>
     </main>
 
