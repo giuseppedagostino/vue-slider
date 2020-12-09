@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <!-- vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-    <!-- js -->
-    <script src="js/main.js" charset="utf-8"></script>
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -21,13 +19,17 @@
 
     <main>
       <div class="prev">
-        <i class="fas fa-chevron-circle-left"></i>
+        <i class="fas fa-chevron-circle-left" @click="prevImage"></i>
       </div>
-      <div class="slide"></div>
+      <div class="slide">
+        <img :src="images[imageIndex]" alt="paesaggio">
+      </div>
       <div class="next">
-        <i class="fas fa-chevron-circle-right"></i>
+        <i class="fas fa-chevron-circle-right" @click="nextImage"></i>
       </div>
     </main>
 
+    <!-- js -->
+    <script src="js/main.js" charset="utf-8"></script>
   </body>
 </html>
