@@ -35,13 +35,33 @@ main {
 .prev, .next {
   height: 100%;
   width: 80px;
-  font-size: 48px;
+  font-size: 40px;
   /* flex */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-i:hover {
+.prev i:hover, .next i:hover {
   cursor: pointer;
   transform: scale(1.2);
+}
+
+nav {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  /* estetica */
+  padding: 20px;
+  width: 220px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 60px;
+  /* flex */
+  display: flex;
+  justify-content: space-around;
+}
+nav i.active {
+  color: dodgerblue;
+  transform: scale(1.4);
 }
