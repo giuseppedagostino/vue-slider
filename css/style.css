@@ -40,7 +40,7 @@ main {
   justify-content: center;
   align-items: center;
 }
-.prev i:hover, .next i:hover {
+i:hover {
   cursor: pointer;
   transform: scale(1.2);
 }

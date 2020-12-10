@@ -1,6 +1,3 @@
-// Provare a riprodurre uno slider di immagini.
-// Bonus: aggiungiamo autoplay.
-
 var app = new Vue(
   {
     el: "main",
@@ -30,6 +27,9 @@ var app = new Vue(
         if (this.imageIndex == -1) {
           this.imageIndex = this.images.length -1;
         }
+      },
+      goToImage: function(newIndex) {
+        this.imageIndex = newIndex;
       }
     }
 
